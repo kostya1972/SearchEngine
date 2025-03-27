@@ -1,0 +1,139 @@
+{
+  "answers": [
+    {
+      "request_0": [
+        {
+          "result": "true"
+        },
+        {
+          "relevance": [
+            {
+              "doc_id": 7,
+              "rank": "1.000000"
+            },
+            {
+              "doc_id": 9,
+              "rank": "0.833333"
+            },
+            {
+              "doc_id": 6,
+              "rank": "0.500000"
+            },
+            {
+              "doc_id": 8,
+              "rank": "0.388888"
+            },
+            {
+              "doc_id": 5,
+              "rank": "0.388888"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_1": [
+        {
+          "result": "true"
+        },
+        {
+          "doc_id": 0,
+          "rank": "1.000000"
+        }
+      ]
+    },
+    {
+      "request_2": [
+        {
+          "result": "true"
+        },
+        {
+          "relevance": [
+            {
+              "doc_id": 5,
+              "rank": "1.000000"
+            },
+            {
+              "doc_id": 4,
+              "rank": "0.916666"
+            },
+            {
+              "doc_id": 1,
+              "rank": "0.833333"
+            },
+            {
+              "doc_id": 3,
+              "rank": "0.583333"
+            },
+            {
+              "doc_id": 2,
+              "rank": "0.416666"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_3": [
+        {
+          "result": "true"
+        },
+        {
+          "relevance": [
+            {
+              "doc_id": 0,
+              "rank": "1.000000"
+            },
+            {
+              "doc_id": 5,
+              "rank": "0.818181"
+            },
+            {
+              "doc_id": 4,
+              "rank": "0.666666"
+            },
+            {
+              "doc_id": 9,
+              "rank": "0.484848"
+            },
+            {
+              "doc_id": 6,
+              "rank": "0.424242"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "request_4": [
+        {
+          "result": "true"
+        },
+        {
+          "relevance": [
+            {
+              "doc_id": 7,
+              "rank": "1.000000"
+            },
+            {
+              "doc_id": 5,
+              "rank": "0.857142"
+            },
+            {
+              "doc_id": 2,
+              "rank": "0.857142"
+            },
+            {
+              "doc_id": 9,
+              "rank": "0.809523"
+            },
+            {
+              "doc_id": 8,
+              "rank": "0.809523"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
