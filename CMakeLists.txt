@@ -9,7 +9,7 @@ set(JSON_BuildTests OFF CACHE INTERNAL "")
 add_subdirectory(nlohmann_json Json)
 include_directories(Include)
 add_subdirectory(Source)
-add_executable(SearchEngine ../Source/main.cpp ../Source/ConverterJSON.cpp ../Include/ConverterJSON.h ../Include/InvertedIndex.h ../Source/InvertedIndex.cpp ../Source/SearchServer.cpp ../Include/SearchServer.h ../Source/EngineExceptions.cpp ../Include/EngineExceptions.h ../Include/tests.h)
+add_executable(SearchEngine ./Source/main.cpp ./Source/ConverterJSON.cpp ./Include/ConverterJSON.h ./Include/InvertedIndex.h ./Source/InvertedIndex.cpp ./Source/SearchServer.cpp ./Include/SearchServer.h ./Source/EngineExceptions.cpp ./Include/EngineExceptions.h ./Include/tests.h)
 
 target_link_libraries(SearchEngine nlohmann_json::nlohmann_json)
 
