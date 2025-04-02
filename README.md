@@ -1,8 +1,8 @@
 <h1>SearchEngine</h1>  
 
 <h2>Short description</h2>  
-It is an engine for files searching,are pointed in file <b>config.json</b>(the files located in project directory <b>Resources</b>,   
-but you may to write your own files paths), by requests strings,that are pointed in file <b>request.json</b>.  
+It is an engine for files search,are pointed in file <b>config.json</b>(the files located in project directory <b>Resources</b>,   
+but you may to write your own files paths), by requests strings, that are pointed in file <b>request.json</b>.
 
 <h2>Technology and languages</h2>  
 The project written via <b>C++(v.14)</b>, by <b>IDE CLion2020.3.3</b>, with using <b>json</b> technology.  
@@ -19,9 +19,10 @@ cmake --build SearchEngine -- -j 3<br>
 The program is run by command <i>SearchEngine</i>.  
 Before running you should to write files paths for searching, to section <b>files</b> of file <b>config.json</b>,  
 since the engine read files paths, while program launching.  
-You may write words for searching as well before, as after launching program, to file <b>request.json</b>.  
-For searching you need input command <i>request</i>.  
-Results of the searching are put to file <b>answers.json</b> in order of relevant, are pointed in a field <b>rank</b>.  
+You may write words for search as well before, as after program launching, to file <b>request.json</b>.  
+For search you need input command <i>request</i>.  
+Results of the search are put to file <b>answers.json</b>, in order of relevant, are pointed in a field <b>rank</b>.    
+<b>SearchEngine</b> updates a search base in term, pointing in a field <b>update_time</b> of file <b>config.json</b>.   
 <b>SearchEngine</b> is closed by command <i>quit</i>.  
 
 <h2>Testing</h2>  
