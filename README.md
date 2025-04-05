@@ -12,7 +12,7 @@ For testing is uses framework <b>Google Test</b>.
 You need to clone and build this repository, by<br>  
 git clone https://github.com/kostya1972/SearchEngine<br>
 cd SearchEngine<br>
-cmake -G "CodeBlocks - MinGW Makefiles" SearchEngine<br>
+cmake -G CodeBlocks - MinGW Makefiles SearchEngine<br>
 cmake --build SearchEngine -- -j 3<br>
  
 <h2>Running</h2>  
