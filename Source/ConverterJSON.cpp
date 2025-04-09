@@ -102,26 +102,20 @@ std::vector<std::string> ConverterJSON::GetRequests()
 
 void ConverterJSON::PutAnswers(std::vector<std::vector<std::pair<size_t , float>>> answers)
 {
-    std::ofstream file(".\\Json_files\\answers.json");
-    nlohmann::json answersFile;
+    std::ofstream file("..\\Json_files\\answers.json");
+    nlohmann::ordered_json answersFile;
 
     for (int i = 0; i < answers.size(); i++)
     {
-        nlohmann::json request;
-        nlohmann::json result;
-        nlohmann::json relevance;
         nlohmann::json pair;
 
         if (answers[i].empty()) //если ответ на запрос пустой
         {
-            result["result"] = "false";
-            request["request_" + std::to_string(i)].emplace_back(result);
+            answersFile["answers"]["request_" + std::to_string(i)]["result"] = "false";
         }
         else //если ответ на запрос есть
         {
-            result["result"] = "true";
-            request["request_" + std::to_string(i)].emplace_back(result);
-
+            answersFile["answers"]["request_" + std::to_string(i)]["result"] = "true";
             size_t answerSize = answers[i].size();
 
             for (int j = 0; j < answerSize; j++) // перебираем все документы запроса
@@ -130,19 +124,20 @@ void ConverterJSON::PutAnswers(std::vector<std::vector<std::pair<size_t , float>
                 pair["rank"] = std::to_string(answers[i][j].second);
 
                 if (answerSize > 1) // если документов больше одного создаем 'relevance'
-                    relevance["relevance"].emplace_back(pair);
+                {
+                    answersFile["answers"]["request_" + std::to_string(i)]["relevance"].emplace_back(pair);
+                }
             }
-            if (answerSize > 1)
-                request["request_" + std::to_string(i)].emplace_back(relevance);
-            else
-                request["request_" + std::to_string(i)].emplace_back(pair);
+            if (answerSize == 1)
+            {
+                answersFile["answers"]["request_" + std::to_string(i)]["dock_id"] = pair["doc_id"];
+                answersFile["answers"]["request_" + std::to_string(i)]["rank"] = pair["rank"];
+            }
         }
-        answersFile["answers"].emplace_back(request);
     }
     file << std::setw(2) << answersFile;
     file.close();
 }
-
 const SearchConfig &ConverterJSON::GetSearchConfig() const
 {
     return searchConfig;
