@@ -6,15 +6,15 @@
     "update_time": 3600 ,"it`s commentary": "time in seconds"
   },
   "files": [
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_0.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_1.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_2.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_3.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_4.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_5.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_6.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_7.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_8.txt",
-    "C:/Users/Kostya/CLionProjects/SearchEngine/Resources/Document_9.txt"
+    "./Resources/Document_0.txt",
+    "./Resources/Document_1.txt",
+    "./Resources/Document_2.txt",
+    "./Resources/Document_3.txt",
+    "./Resources/Document_4.txt",
+    "./Resources/Document_5.txt",
+    "./Resources/Document_6.txt",
+    "./Resources/Document_7.txt",
+    "./Resources/Document_8.txt",
+    "./Resources/Document_9.txt"
   ]
 }
