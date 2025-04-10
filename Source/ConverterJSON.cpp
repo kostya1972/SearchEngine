@@ -7,7 +7,7 @@ ConverterJSON::ConverterJSON()
     nlohmann::json configFile;
     try
     {
-        file.open(".\\Json_files\\config.json");
+        file.open("..\\Json_files\\config.json");
         if (!file.is_open())
         {
             throw EngineException(CONF_FILE_MISSING);
@@ -74,7 +74,7 @@ std::vector<std::string> ConverterJSON::GetRequests()
     nlohmann::json requestsFile;
     try
     {
-        file.open(".\\Json_files\\requests.json");
+        file.open("..\\Json_files\\requests.json");
         if (!file.is_open())
         {
             throw EngineException(REQUEST_FILE_MISSING);
